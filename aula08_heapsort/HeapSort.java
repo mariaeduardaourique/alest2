@@ -13,10 +13,12 @@ public class HeapSort {
         return 0;
     }
     public void ordenar(int[] a) {
-        int pUltimoPai = a.length-1; //para achar a posiçao do ultimo elemento 
-        int pPaiUltimo = (pUltimoPai-1/2); //achar o ultimo pai 
+        //ordenar
+        int pUltimo = a.length-1; //Para achar a posição do último elemento
+        int pPaiUltimo = (pUltimo-1)/2; //Para achar o último pai 
         afundar(a, pPaiUltimo);
         ArrayUtils.imprimir(a);
+
     }
 
     private void gerarHeap(int[] a) {
